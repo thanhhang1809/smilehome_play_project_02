@@ -1,0 +1,73 @@
+# Language file for Vietnamese
+
+msg.login = Đăng Nhập
+msg.login.info = Vui lòng đăng nhập bằng tài khoản của bạn
+msg.logout = Đăng Xuất
+msg.actions = Hành động
+msg.action = Hành động
+msg.save = Lưu
+msg.delete = Xoá
+msg.reset = Hoàn Tác
+msg.ok = Chấp Nhận
+msg.cancel = Quay Lại
+
+error.user_not_found = Lỗi: Tài khoản "{0}" không tồn tại!
+error.login_failed = Lỗi: Mật mã nhập vào không đúng!
+
+msg.not_implemented = Thông tin: Chức năng này chưa được thực hiện!
+
+msg.dashboard = Trang Nhà
+msg.profile = Hồ Sơ Cá Nhân
+msg.user_management = Quản Lý Người Dùng
+
+msg.usergroups = Nhóm người dùng
+msg.usergroup = Nhóm người dùng
+msg.usergroup.id = Id
+msg.usergroup.desc = Mô tả
+
+error.usergroup.not_found = Lỗi: Nhóm người dùng "{0}" không tồn tại!
+
+msg.create_usergroup = Tạo Nhóm Người Dùng
+msg.create_usergroup.done = Tạo nhóm người dùng "{0}" thành công.
+msg.create_usergroup.failed = Tạo nhóm người dùng "{0}" không thành công.
+
+error.usergroup.empty_id = Lỗi: Vui lòng nhập vào id của nhóm người dùng!
+error.usergroup.exists = Lỗi: Nhóm người dùng "{0}" đã tồn tại!
+
+msg.edit_usergroup = Thay Đổi Nhóm Người Dùng
+msg.edit_usergroup.done = Cập nhật nhóm người dùng "{0}" thành công.
+msg.edit_usergroup.failed = Cập nhật nhóm người dùng "{0}" không thành công.
+
+msg.delete_usergroup = Xoá Nhóm Người Dùng
+msg.delete_usergroup.done = Xoá nhóm người dùng "{0}" thành công.
+msg.delete_usergroup.failed = Xoá nhóm người dùng "{0}" không thành công.
+error.usergroup.cannot_delete_sytem_usergroup = Lỗi: Không thể xoá nhóm người dùng hệ thống "{0}"!
+
+msg.users = Người Dùng
+msg.user = Người Dùng
+msg.user.username = Tên Đăng Nhập
+msg.user.fullname = Tên Hiển Thị
+msg.user.group = Nhóm Người Dùng
+msg.user.email = Email
+msg.user.password = Mật mã
+msg.user.confirmed_password = Xác nhận lại mật mã
+msg.user.password_change = Nhập mật mã mới để đổi mật mã
+
+error.user.not_found = Lỗi: Người dùng "{0}" không tồn tại!
+
+msg.create_user = Tạo Người Dùng
+msg.create_user.done = Tạo người dùng "{0}" thành công.
+msg.create_user.failed = Tạo người dùng "{0}" không thành công.
+error.user.empty_username = Lỗi: Vui lòng nhập vào tên đăng nhập!
+error.user.exists = Lỗi: Người dùng "{0}" đã tồn tại!
+error.user.empty_password = Lỗi: Vui lòng nhập vào mật mã!
+error.user.mismatched_password = Lỗi: Mật mã nhập 2 lần phải giống nhau!
+
+msg.edit_user = Thay Đổi Người Dùng
+msg.edit_user.done = Cập nhật người dùng "{0}" thành công.
+msg.edit_user.failed = Cập nhật người dùng "{0}" không thành công.
+
+msg.delete_user = Xoá Người Dùng
+msg.delete_user.done = Xoá người dùng "{0}" thành công.
+msg.delete_user.failed = Xoá người dùng "{0}" không thành công.
+error.user.cannot_delete_sytem_user = Lỗi: Không thể xoá người dùng hệ thống "{0}"!

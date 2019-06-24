@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET		/									controllers.IndexController.index
+
+GET     /400                                controllers.IndexController.error400(msg: String?="")
+GET     /403                                controllers.IndexController.error403(msg: String?="")
+GET     /404                                controllers.IndexController.error404(msg: String?="")
+GET     /error                              controllers.IndexController.errorServer(msg: String?="")
+
+# Map static resources from the /public folder to the /assets URL path
+# prefix must match `play.assets.urlPrefix`
+GET     /assets/*file                       controllers.Assets.at(file)
+GET     /versionedAssets/*file              controllers.Assets.versioned(file)
+#GET     /assets/*file                       controllers.Assets.versioned(path="/public", file: Asset)
+#GET     /assets/*file                       controllers.Assets.at(path="/public", file: Asset)
+
+## Include routes for samples
+-> /samples         samples.Routes
+-> /samplesApi      samplesApi.Routes

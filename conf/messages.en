@@ -1,0 +1,72 @@
+# Language file for English
+
+msg.login = Log in
+msg.login.info = Please log in using your login account
+msg.logout = Log out
+msg.actions = Actions
+msg.action = Action
+msg.save = Save
+msg.delete = Delete
+msg.reset = Reset
+msg.ok = Ok
+msg.cancel = Cancel
+
+error.user_not_found = Error: User "{0}" not found!
+error.login_failed = Error: Password does not match!
+
+msg.not_implemented = Info: This function is not implemented yet!
+
+msg.dashboard = Dashboard
+msg.profile = Profile
+msg.user_management = User Management
+
+msg.usergroups = Usergroups
+msg.usergroup = Usergroup
+msg.usergroup.id = Id
+msg.usergroup.desc = Description
+
+error.usergroup.not_found = Error: Usergroup "{0}" not found!
+
+msg.create_usergroup = Create Usergroup
+msg.create_usergroup.done = Usergroup "{0}" has been created successfully.
+msg.create_usergroup.failed = Usergroup "{0}" has failed to be created.
+error.usergroup.empty_id = Error: Usergroup id must not be empty!
+error.usergroup.exists = Error: Usergroup "{0}" already existed!
+
+msg.edit_usergroup = Edit Usergroup
+msg.edit_usergroup.done = Usergroup "{0}" has been updated successfully.
+msg.edit_usergroup.failed = Usergroup "{0}" has failed to be updated.
+
+msg.delete_usergroup = Delete Usergroup
+msg.delete_usergroup.done = Usergroup "{0}" has been deleted successfully.
+msg.delete_usergroup.failed = Usergroup "{0}" has failed to be deleted.
+error.usergroup.cannot_delete_sytem_usergroup = Error: Cannot delete system usergroup "{0}"!
+
+msg.users = Users
+msg.user = User
+msg.user.username = Username
+msg.user.fullname = Fullname
+msg.user.group = Group
+msg.user.email = Email
+msg.user.password = Password
+msg.user.confirmed_password = Confirmed password
+msg.user.password_change = Enter new password to change it
+
+error.user.not_found = Error: User "{0}" not found!
+
+msg.create_user = Create User
+msg.create_user.done = User "{0}" has been created successfully.
+msg.create_user.failed = User "{0}" has failed to be created.
+error.user.empty_username = Error: Username must not be empty!
+error.user.exists = Error: User "{0}" already existed!
+error.user.empty_password = Error: Password must not be empty!
+error.user.mismatched_password = Error: Password does not match the confirmed one!
+
+msg.edit_user = Edit User
+msg.edit_user.done = User "{0}" has been updated successfully.
+msg.edit_user.failed = User "{0}" has failed to be updated.
+
+msg.delete_user = Delete User
+msg.delete_user.done = User "{0}" has been deleted successfully.
+msg.delete_user.failed = User "{0}" has failed to be deleted.
+error.user.cannot_delete_sytem_user = Error: Cannot delete system user "{0}"!

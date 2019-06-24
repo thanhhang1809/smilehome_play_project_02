@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="API_ROUTER" class="com.github.ddth.recipes.apiservice.ApiRouter" init-method="init" destroy-method="destroy">
+        <!-- Sample API authenticator: allow all API calls -->
+        <property name="apiAuthenticator">
+            <bean class="com.github.ddth.recipes.apiservice.auth.AllowAllApiAuthenticator" />
+        </property>
+
+        <!-- Sample API authenticator: authenticate API clients using a map {app-id:access-code} -->
+        <!--
+        <property name="apiAuthenticator">
+            <bean class="com.github.ddth.recipes.apiservice.auth.BasicApiAuthenticator">
+                <property name="apiAuths">
+                    <map>
+                        <entry key="app-id-demo">
+                            <bean class="com.github.ddth.recipes.apiservice.ApiAuth">
+                                <property name="appId" value="app-id-demo" />
+                                <property name="accessToken" value="access-token-demo" />
+                            </bean>
+                        </entry>
+                        <entry key="app-id-test">
+                            <bean class="com.github.ddth.recipes.apiservice.ApiAuth">
+                                <property name="appId" value="app-id-test" />
+                                <property name="accessToken" value="access-token-test" />
+                            </bean>
+                        </entry>
+                    </map>
+                </property>
+            </bean>
+        </property>
+        -->
+
+        <!-- Sample API handlers -->
+        <!--
+        <property name="apiHandlers">
+            <map>
+                <entry key="echo">
+                    <util:constant static-field="samples.api.ApiFuncSample.API_ECHO"/>
+                </entry>
+                <entry key="info">
+                    <util:constant static-field="samples.api.ApiFuncSample.API_INFO"/>
+                </entry>
+                <entry key="deny">
+                    <util:constant static-field="samples.api.ApiFuncSample.API_DENY"/>
+                </entry>
+            </map>
+        </property>
+        -->
+    </bean>
+
+</beans>
